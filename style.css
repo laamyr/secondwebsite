@@ -1,0 +1,227 @@
+@import 'utilities.css';
+
+:root {
+    --primary:#3dcfd3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --jaune:#e9ab0c;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing:antialiased;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    background:var(--dark);
+    clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 92% ,0 100% );
+    z-index: 900;
+    transition: 0.7s ease;
+    
+}
+
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header nav .left a{
+     color: var(--pure);
+     text-decoration: none ;
+     margin-right: 2rem;
+     text-transform: uppercase;
+     transition: all .3s ease;
+     -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+     -ms-transition : all .3s ease;
+     -o-transition: all .3s ease;
+
+}
+header nav .left a:hover{
+    color: var(--jaune);
+}
+
+
+header nav{
+    padding: 2rem 0;
+
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+
+.hero  .left img{
+    width: 350px;
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    font-size:  1.6rem;
+    color: var(--jaune);
+    margin-bottom: .5rem;
+}
+
+.hero .right h1{
+    font-size :4rem; 
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom:  2rem;
+}
+
+.hero .right h1 span{
+    color: var(--jaune);
+}
+
+.hero .right p{
+    line-height:1.9 ;
+    margin-bottom: 2rem;
+}
+
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 400px;
+
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem ;
+}
+section.about h1 span{
+    color: var(--jaune);
+}
+
+section.about h3{
+   font-size: 1rem; 
+   margin-bottom: 1rem;
+   font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato' , sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 20%;
+}
+
+section.about .social{
+    display: flex;
+}
+section.about .social a {
+    background: var(--dark);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 2rem;
+   
+}
+section.about .social  a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem;
+    
+    
+}
+section.about .social  a :hover{
+    background: var(--jaune);
+    border-radius: 50%;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.7em;
+    font-weight: 800;
+    margin-bottom: 50px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    background-color: rgb(52, 52, 52) ;
+    width:18em ;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
+    border-radius: 10px;
+    padding:25px ;
+    margin: 15px;
+    transition: 0.7s ease ;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: rgb(255, 46, 46);
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.info p{
+    color: white;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.footer{
+    background-color: rgb(34, 34, 30);
+    color: aliceblue;
+    padding: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media a{
+    color: rgb(199, 199, 199);
+    font-size: 1.4em;
+    padding-right: 30px
+
+}
